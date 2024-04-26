@@ -1,0 +1,89 @@
+body {
+  font-family: "Philosopher", "sans-serif";
+}
+nav {
+  font-family: "Philosopher";
+}
+main {
+  background-color: #36454f;
+  padding-bottom: 50px;
+  font-family: "Philosopher";
+}
+.c-item {
+  height: 600px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.card-row {
+  margin-bottom: 20px;
+}
+.card {
+  margin-top: 50px;
+}
+.card-body {
+  background-color: #cccccc;
+}
+
+img {
+  border: #36454f 1px solid;
+  border-color: #36454f;
+  border-radius: 2px;
+}
+#logo {
+  border: #36454f 0px solid;
+  border-color: #36454f;
+}
+#container {
+  padding-top: 1000px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Media querry for the different sizes of screen to fix small issue */
+/* @media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+} */
