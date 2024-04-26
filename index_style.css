@@ -48,6 +48,15 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
+}
+
+.my-centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* Media querry for the different sizes of screen to fix small issue */
 /* @media only screen and (min-width: 769px) and (max-width: 1025px) {

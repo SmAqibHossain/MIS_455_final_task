@@ -1,14 +1,3 @@
-// function connect() {
-//   var searchTerm = document.getElementById("searchBox").value;
-//   document.getElementById("searchBox").value = "";
-//   var url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`;
-//   console.log("OKKKK");
-
-//   fetch(url)
-//     .then((res) => res.json())
-//     .then((data) => console.log(data.meals));
-//   // .then((data) => display(data.meals));
-// }
 var name;
 function connect() {
   var searchTerm = document.getElementById("searchBox").value;
@@ -41,13 +30,14 @@ function display(items) {
     var oldContent = document.getElementById("content_holder");
     oldContent.textContent = "";
     var newDiv = document.createElement("div");
-    newDiv.innerHTML = `              <button
+    newDiv.innerHTML = `          <div class="my-centered-div""> <h3 style="color: white;">There is more than 5 recepies: </h3><br>   <button
                 onclick="connect_2()"
                 type="button"
-                class="btn btn-lg btn-success"
+                class="btn btn-lg btn-success "
               >
                 Show all 
-              </button>`;
+              </button>
+              </div>`;
     oldContent.appendChild(newDiv);
   }
 
@@ -89,7 +79,7 @@ function connect_2() {
   var searchTerm = document.getElementById("searchBox").value;
   document.getElementById("searchBox").value = "";
 
-  var url = `https://www.themealdb.com/api/json/v1/1/search.php?s=chicken`;
+  var url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`;
 
   fetch(url)
     .then((res) => res.json())
@@ -113,16 +103,17 @@ function display_2(items) {
   oldContent.textContent = "";
 
   if (items.length > 5) {
-    var oldContent = document.getElementById("content_holder2");
+    var oldContent = document.getElementById("content_holder");
     oldContent.textContent = "";
     var newDiv = document.createElement("div");
-    newDiv.innerHTML = `              <button
+    newDiv.innerHTML = `          <div class="my-centered-div"">    <button
                 onclick="connect_2()"
                 type="button"
                 class="btn btn-lg btn-success "
               >
                 Show all 
-              </button>`;
+              </button>
+              </div>`;
     oldContent.appendChild(newDiv);
   }
 
@@ -144,7 +135,7 @@ function display_2(items) {
               <p class="card-text">${items[i].strInstructions}</p>
               <p class="card-body">
                 <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
+                  >ID: ${items[i].idMeal}, Catagory:${items[i].strCategory}</small
                 >
               </p>
             </div>
