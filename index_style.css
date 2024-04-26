@@ -1,13 +1,13 @@
 body {
-  font-family: "Philosopher", "sans-serif";
+  font-family: "Open Sans", "sans-serif";
 }
 nav {
-  font-family: "Philosopher";
+  font-family: "Open Sans";
 }
 main {
-  background-color: #36454f;
+  background-color: #3c5b6f;
   padding-bottom: 50px;
-  font-family: "Philosopher";
+  font-family: "Open Sans";
 }
 .c-item {
   height: 600px;
@@ -26,7 +26,7 @@ main {
   margin-top: 50px;
 }
 .card-body {
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 
 img {

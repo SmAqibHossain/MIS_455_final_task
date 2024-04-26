@@ -5,14 +5,15 @@
     <link
       rel="shortcut icon"
       typw="x-icon"
-      href="icons8-assassins-creed-logo-50.png"
+      href="vecteezy_hand-drawn-big-burger-illustration_6034883.jpg"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="index_style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -22,15 +23,15 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shadow Inc</title>
+    <title>Meal Genie</title>
   </head>
-  <body style="font-family: 'Philosopher', 'sans-serif'">
+  <body style="font-family: 'Open Sans', 'sans-serif'">
     <nav>
       <!-- NAV BAR CODE START -->
-      <nav class="navbar navbar-expand-lg" style="background-color: #686868">
+      <nav class="navbar navbar-expand-lg" style="background-color: #dfd0b8">
         <div class="container-fluid">
           <img
-            src="icons8-assassins-creed-logo-50.png"
+            src="vecteezy_hand-drawn-big-burger-illustration_6034883.jpg"
             alt="Bootstrap"
             width="30"
             height="24"
@@ -105,7 +106,7 @@
             <h1 class="display-1 fw-bolder text-capitalize">
               Your go to recipie Genie
             </h1>
-            <p class="mt-5 fs-3 text-uppercase">Welcome to Meal genie</p>
+            <p class="mt-5 fs-3 text-uppercase">Where passion meets taste</p>
 
             <!-- <button
               class="btn btn-dark px-4 py-2 fs-5 mt-5"
@@ -118,9 +119,9 @@
         <div class="carousel-item c-item">
           <img src="carousel_2.jpg" class="d-block w-100 c-img" alt="Slide 2" />
           <div class="carousel-caption top-0 mt-4">
-            <p class="text-uppercase fs-3 mt-5">Need a Discreet Solution?</p>
+            <p class="text-uppercase fs-3 mt-5">Welcome to Meal genie</p>
             <p class="display-1 fw-bolder text-capitalize">
-              Choose from 3 Specialized Contracts
+              Flavors. Explore. Cook. Savor. Repeat.
             </p>
             <button
               class="btn btn-dark px-4 py-2 fs-5 mt-5"
@@ -128,16 +129,17 @@
               data-bs-target="#booking-modal"
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             >
-              Contract an Assassin
+              Unlock Your Inner Chef
             </button>
+            <p class="mt-5 fs-3 text-uppercase">Where passion meets taste</p>
           </div>
         </div>
         <div class="carousel-item c-item">
           <img src="carousel_3.jpg" class="d-block w-100 c-img" alt="Slide 3" />
           <div class="carousel-caption top-0 mt-4">
-            <p class="text-uppercase fs-3 mt-5">The Ultimate Solution Awaits</p>
+            <p class="text-uppercase fs-3 mt-5">Welcome to Meal genie</p>
             <p class="display-1 fw-bolder text-capitalize">
-              Your Problem, Our Profession
+              Wish granted, delicious adventures await.
             </p>
             <button
               class="btn btn-dark px-4 py-2 fs-5 mt-5"
@@ -191,19 +193,23 @@
         <div class="row">
           <div class="col">
             <form>
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <p for="exampleInputEmail1" class="form-label">
                   Search your favourite recipie!
                 </p>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="searchBox"
-                  aria-describedby="emailHelp"
-                />
+                <input class="form-control" id="searchBox" />
               </div>
-              <button type="submit" onclick="connect()" class="btn btn-primary">
-                Search!
+              <button onclick="connect()">Search</button> -->
+
+              <div class="mb-3 mt-5">
+                <input class="form-control" id="searchBox" />
+              </div>
+              <button
+                onclick="connect()"
+                type="button"
+                class="btn btn-lg btn-success"
+              >
+                Search
               </button>
             </form>
           </div>
@@ -212,12 +218,13 @@
       <!-- SEARCH BOX -->
 
       <div id="content_holder"></div>
+      <div id="content_holder2"></div>
     </main>
 
     <!-- FOOTER CODE SARTARER -->
     <footer
       class="text-center text-lg-start bg-body-dark text-muted"
-      style="background-color: #686868"
+      style="background-color: #fff5e0"
     >
       <section
         class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -227,13 +234,15 @@
         <div class="container text-center text-md-start mt-5">
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h4 class="text-uppercase fw-bold mb-4">Shadow Inc</h4>
+              <h4 class="text-uppercase fw-bold mb-4">Meal Genie</h4>
               <p>
-                Welcome to Shadow Inc., where expertise meets discretion in
-                fulfilling your most delicate assignments. Our seasoned
-                professionals operate with precision and anonymity, ensuring
-                seamless execution of your objectives. Trust Shadow Inc. for
-                unparalleled results, every time
+                Welcome to Meal Genie, where culinary mastery meets mystery. Our
+                team of seasoned chefs crafts exceptional recipes with a touch
+                of intrigue. We provide precise instructions and hidden hints to
+                unlock the full potential of each dish. Explore a world of
+                flavors with anonymity, ensuring a seamless journey to delicious
+                success. Trust Secret Kitchen for unparalleled recipes, every
+                bite a revelation.
               </p>
             </div>
 
@@ -258,7 +267,7 @@
               <p><i class="fas fa-home me-3"></i> Gulistan, 10012, BD</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
-                AC@Creed.com
+                Meal@Genie.com
               </p>
               <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
               <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
@@ -272,7 +281,7 @@
         style="background-color: rgba(0, 0, 0, 0.05)"
       >
         © 2021 Copyright:
-        <a class="text-reset fw-bold"> Shadow Inc.</a>
+        <a class="text-reset fw-bold"> Meal Genie.</a>
       </div>
       <div
         class="text-center p-4"
@@ -287,11 +296,12 @@
       </div>
     </footer>
     <!-- FOOTER CODE SARTARER -->
-    <script src="index.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
